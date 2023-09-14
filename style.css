@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,500;1,900&display=swap');
+
+body{
+  font-family: 'Montserrat';
+ background-color:#f6f9fc;
+  padding: 0%;
+  margin: 0%;
+}
+
+#fonte{
+  color: #000000;
+  
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+}
+.teste h1{
+  color: #004AAD;
+}
+
+header {
+  background-color: #f6f9fc;
+  height: 100%;
+  box-shadow: 0px 3px  10px #464646;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 6rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+
+}
+
+
+.logo a{
+  text-decoration: none;
+  color: #15486E;
+  font-size: 30px;
+  font-weight: 600;
+  
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+
+.nav-item {
+  margin: 20%;
+}
+#nav-item-mobile{
+  margin: 3%;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 1.15rem;
+  color: #000000;
+  font-weight: 400;
+}
+
+.nav-link:hover{
+  border-bottom: 2px solid #15486E;
+ 
+}
+.nav-link i:hover{
+  transform: scale(1.5); 
+ 
+}
+
+.login-button button {
+
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+.login-button button a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 500;
+  font-size: 1.1rem;
+ 
+}
+
+.mobile-menu-icon {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .nav-bar {
+      padding: 1.5rem 4rem;
+  }
+  .nav-item {
+      display: none;
+  }
+  .login-button {
+      display: none;
+  }
+  .mobile-menu-icon {
+      display: block;
+  }
+  .mobile-menu-icon button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+     
+  }
+  .mobile-menu-icon button img{
+      width: 50px;
+      height: 50px;
+  }
+  .mobile-menu ul {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      
+  }
+  .mobile-menu .nav-item {
+      display: block;
+      padding-top: 1rem;
+  }
+  .mobile-menu .login-button {
+      display: block;
+      
+  }
+  .mobile-menu .login-button button {
+      width: 100%;
+  }
+  .open {
+      display: block;
+  }
+ 
+}
+
+.banner { 
+  
+   background: #f6f9fc
+     0 0 no-repeat  fixed;
+   text-align: center;
+   background-size: cover;
+
+  
+   height: 400px;
+   width: 100%;
+   margin-bottom: 3em;
+   display: table;
+  }
+  
+  .banner-head {
+   display: table-cell;
+   vertical-align: middle;
+   margin-bottom: 0;
+   font-size: 2.5em;
+   color: rgb(0, 0, 0);
+   font-weight: 400;
+   text-shadow: 0 1px 1px black;
+   transition: all 0.5s;
+  }
+#saber a{
+  color: #15486E;
+}
+#saber a:hover{
+  color: #ffffff;
+}
+ 
+  /*aplicativo*/
+  .app{
+    margin-top: 20px;
+    padding: 0px 10%;
+    transition: all 0.5s;
+  }
+  .sistema img{
+    width: 300px;
+    float: left;
+    margin-top: 20px;
+    
+  }
+  .text-app{ 
+  color:#ffffff;
+  margin-top:5%;
+}
+  .text-appp{
+  color: #ffffff;
+  font-weight: 600;}
+
+   
+.bc2{
+  margin-top: 150px;
+  padding: 0px 10%;
+}
+.text-bc2{
+  color: #15486E;
+  text-align: center;
+  margin-top: 3%;
+  font-size: 40px; 
+  font-weight: 600;
+}
+#saber { 
+  
+  background: #f6f9fc
+    0 0 no-repeat  fixed;
+  text-align: center;
+  background-size: cover;
+
+ 
+  height: 400px;
+  width: 100%;
+  margin-bottom: 3em;
+  display: table;
+ }
+ 
+ #saber-head {
+  display: table-cell;
+  vertical-align: middle;
+  margin-bottom: 0;
+  font-size: 2em;
+  color: rgb(0, 0, 0);
+  font-weight: 400;
+  text-shadow: 0 1px 1px black;
+ }
+ #saber {
+   --color: #135097;
+   font-family: inherit;
+   display: inline-block;
+   width: 7em;
+   height: 2.6em;
+   line-height: 2.5em;
+   overflow: hidden;
+   margin: 20px;
+   font-size: 17px;
+   z-index: 1;
+   color: var(--color);
+   border: 2px solid var(--color);
+   border-radius: 6px;
+   position: relative;
+ }
+ 
+ #saber::before {
+   position: absolute;
+   content: "";
+   background: var(--color);
+   width: 170px;
+   height: 200px;
+   z-index: -1;
+   border-radius: 50%;
+ }
+ 
+ #saber:hover {
+   color: white;
+ }
+ 
+ #saber:before {
+   top: 100%;
+   left: 100%;
+   transition: .3s all;
+ }
+ 
+ #saber:hover::before {
+   top: -30px;
+   left: -30px;
+ }
+
+
+
+
+/*beneicios*/
+.row h1{
+  color: #15486E;
+  text-align: center;
+  margin-top: 3%;
+  font-size: 40px; 
+  font-weight: 600;
+}
+#beneficios{
+  margin-top: 5%;
+  padding: 0px 10%;}
+#beneficiosklep{
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow:  16px 16px 32px #b5b5b5,
+           -16px -16px 32px #ffffff;
+           width:250px;
+           height: 220px;
+           display: inline-block;
+           text-align: center;
+  margin: 1% auto;
+  margin-top: 5%;
+}
+#beneficiosklep h4{margin-top: 4%;}
+
+#beneficiosklep p{margin-top: 5%;}
+
+
+
+.container{ margin-top: 5%;
+  padding: 0px 10%;}
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 350px;
+    background-color: #355891;
+    padding: 20px;
+    border-radius: 10px;
+    position:relative;
+  }
+  
+  .message {
+    color: #355891;
+    font-size: 14px;
+  }
+  
+  .flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+  }
+  
+  .form label {
+    position: relative;
+  }
+  
+  .form label .input {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid #355891;
+    border-radius: 5px;
+  }
+  
+  .form label .input + span {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: #355891;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+  }
+  
+  .form label .input:placeholder-shown + span {
+    top: 15px;
+    font-size: 0.9em;
+  }
+  
+  .form label .input:focus + span,.form label .input:valid + span {
+    top: 30px;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  
+
+  
+  .input01 {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid #355891;
+    border-radius: 5px;
+  }
+  
+  .form label .input01 + span {
+    position: absolute;
+    left: 10px;
+    top: 50px;
+    color: #355891;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+  }
+  
+  .form label .input01:placeholder-shown + span {
+    top: 40px;
+    font-size: 0.9em;
+  }
+  
+  .form label .input01:focus + span,.form label .input01:valid + span {
+    top: 50px;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  
+  .form label .input01:valid + span {
+    color: green;
+  }
+  
+  .fancy {
+    background-color: white;
+    border: 2px solid #355891;
+    border-radius: 0px;
+    box-sizing: border-box;
+    color: #355891;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 390;
+    letter-spacing: 2px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 8px 30px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    transition: all 0.3s ease-in-out;
+    user-select: none;
+    font-size: 13px;
+  }
+  
+  .fancy::before {
+    content: " ";
+    width: 1.7rem;
+    height: 2px;
+    background: #355891;
+    top: 50%;
+    left: 1.5em;
+    position: absolute;
+    transform: translateY(-50%);
+    transform: translateX(230%);
+    transform-origin: center;
+    transition: background 0.3s linear, width 0.3s linear;
+  }
+  
+  .fancy .text {
+    font-size: 1.125em;
+    line-height: 1.33333em;
+    padding-left: 2em;
+    display: block;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+    text-transform: lowercase;
+    text-decoration: none;
+    color: #355891;
+    transform: translateX(30%);
+  }
+  
+  .fancy .top-key {
+    height: 2px;
+    width: 1.5625rem;
+    top: -2px;
+    left: 0.625rem;
+    position: absolute;
+    background: #355891;
+    transition: width 0.5s ease-out, left 0.3s ease-out;
+  }
+  
+  .fancy .bottom-key-1 {
+    height: 2px;
+    width: 1.5625rem;
+    right: 1.875rem;
+    bottom: -2px;
+    position: absolute;
+    background: #355891;
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+  }
+  
+  .fancy .bottom-key-2 {
+    height: 2px;
+    width: 0.625rem;
+    right: 0.625rem;
+    bottom: -2px;
+    position: absolute;
+    background: #355891;
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+  }
+  
+  .fancy:hover {
+    color: #355891;
+    background: #5f82a9;
+  }
+  
+  .fancy:hover::before {
+    width: 1.5rem;
+    background: #355891;
+  }
+  
+  .fancy:hover .text {
+    color: white;
+    padding-left: 1.5em;
+  }
+  
+  .fancy:hover .top-key {
+    left: -2px;
+    width: 0px;
+  }
+  
+  .fancy:hover .bottom-key-1,
+   .fancy:hover .bottom-key-2 {
+    right: 0;
+    width: 0;
+  }
+.fundador{
+  text-align: center;
+  margin-top: 5%;
+}
+
+

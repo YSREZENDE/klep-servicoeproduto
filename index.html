@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="style.css">
+    <title>KLEP</title>
+
+</head>
+<body id="ace">
+    <header > 
+        <nav class="nav-bar">
+            <div class="logo">
+                 <a href="index.html">KLEP</a><i class="fa-solid fa-pills" style="font-size: 30px; padding: 5%; color: #15486E;"></i>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#nome" class="nav-link">Contato</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Aplicativo</a></li>  
+                </ul>
+            </div>
+            
+            <div class="login-button">
+                <button id="fonte" onclick="FontSize('increase');" title="Aumentar fonte">A+</button>
+                <button id="fonte"  onclick="FontSize('decrease');" title="Diminuir fonte">A-</button>
+            </div>
+            <!--mobile-->
+            
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow ()"><a><img src="img\menuclose.png" class="icon" ></a></button>
+            </div>
+        </nav>
+        
+        <div class="mobile-menu">
+          
+          <ul>
+            <li class="nav-item" id="nav-item-mobile"><a href="#" class="nav-link">Início</a></li>
+            <li class="nav-item" id="nav-item-mobile"><a href="#nome" class="nav-link">Contato</a></li>
+            <li class="nav-item" id="nav-item-mobile"><a href="#" class="nav-link">Aplicativo</a></li> 
+        </ul>
+    
+            <div class="login-button">
+                <button id="fonte" onclick="FontSize('increase');"title="Aumentar fonte">A+</button>
+                <button id="fonte"  onclick="FontSize('decrease');" title="Diminuir fonte">A-</button>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="banner" >
+            <h1 class="banner-head">
+               Segurança, modernidade e tecnologia <br>
+                em um só aplicatico.
+                <br>
+                <br>
+               <button id="saber"><a href="#seber" >Saber mais</a></button>
+                
+            </h1>
+        </div>
+    </section>
+    <section class="app" style="background-color: #15486E;">
+        <div class="sistema">
+            
+            <img  src=img\celu-re.png style="width:400px;">
+            <br>
+            <h1 class="text-appp">O aplicativo.</h1>
+            <h2 class="text-app">Sistema integrado com médico convêniados e hospitais.
+                <br> Direcionado a classe C, e quem não possuí acesso a hospitais particulares. </h2>
+        </div>
+        <br>
+    </section>
+        
+    <div class="bc2" id="seber">
+        <h1 class="text-bc2">Empresas B2C</h1>
+        <br>
+        <h3>Para empresas B2C, temos também a opção onde as empresas
+            cadastrariam seus funcionários e eles teriam direito ao acesso através de uma mensalidade.</h3>
+    </div>
+<!--Serviços-->
+<div class="row" id="beneficios">
+    <h1>Benefícios</h1>
+    <div id="beneficiosklep"><i class="fa-solid fa-thumbs-up" style="color: #15486e; font-size:30px; margin-top: 6%;"></i><h4>Intuitivo</h4><p>Usuários conseguem marcar exames e consultados pelo app de forma simples e rápida.</p></div>
+    <div id="beneficiosklep"><i class="fa-solid fa-globe" style="color: #15486e; font-size:30px; margin-top: 6%;"></i><h4>Modernidade</h4><p>Realização de consultas e marcar exames a distância.</p></div>
+    <div id="beneficiosklep"><i class="fa-solid fa-users" style="color: #15486e; font-size:30px; margin-top: 6%;"></i><h4>Tecnologia</h4><p>Empresas podem cadastrar seus funcionários e teram direito através de uma mensalidade.</p></div> 
+  </div>
+ 
+
+  <section class="app" style="background-color: #15486E;">
+    <div class="sistema">
+        <h1 class="text-appp" style="border: 1px solid #355891; font-size: 50px;">Fale conosco.</h1>
+        <h2 class="text-app">Deixe sua mensagem aqui, em breve entraremos em contato. </h2>
+        <br>
+        <form class="form">
+    
+        <div class="flex">
+            <label>
+                <input class="input" id="nome" type="text" placeholder="" required="">
+                <span id="labelNome">nome</span>
+            </label>
+    
+            <label>
+                <input class="input" id="sobrenome" type="text" placeholder="" required="">
+                <span id="labelSobrenome">sobrenome</span>
+            </label>
+        </div>  
+                
+        <label>
+            <input class="input" id="email" type="email" placeholder="" required="">
+            <span id="labelEmail">email</span>
+        </label> 
+            
+        <label>
+            <input class="input" placeholder="" type="tel" required="">
+            <span>número para contato</span>
+        </label>
+        <label>
+            <textarea class="input01" placeholder="" rows="3" required=""></textarea>
+            <span>mensagem</span>
+        </label>
+        
+        <button href="#" class="fancy">
+          <span class="top-key"></span>
+          <span class="text">Enviar</span>
+          <span class="bottom-key-1"></span>
+          <span class="bottom-key-2"></span>
+        </button>
+    </form>
+<br>
+    </div>
+</div>
+</section>
+
+
+<section class="app" >
+    <div class="sistema">
+        
+        <img  src=img\dr.michelan.png style="width:320px; margin-top: 5%;" >
+        <br>
+        <br>
+        <h1 class="text-appp" style="border: 1px solid #355891; font-size: 50px; color:#15486E;">Fundador</h1>
+        <h2 class="text-app" style="color: #000000; font-weight: 500;">Dr. Michelangelo, cirurgião Médico renomado, é responsável pelo maior hospital público do Rio Grande do Sul. </h2>
+    </div>
+    <br>
+</section>
+
+<footer class="text-center text-white" style="background-color: #f1f1f1;">
+    <div class="container pt-4">
+        <section class="mb-4">
+            <a href="index.html" class="btn btn-link btn-floating btn-lg text-dark m-1">Início</a>
+            <a href="index.html" class="btn btn-link btn-floating btn-lg text-dark m-1">Contato</a>
+            <a href="index.html" class="btn btn-link btn-floating btn-lg text-dark m-1">Aplicativo</a>
+        </section>
+    </div>
+    
+    <div class="container pt-4" style="margin-top: 0%;">
+      <section class="mb-4">
+        <!-- Google -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-google"></i
+        ></a>
+        <!--whatsapp-->
+        <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fa-brands fa-whatsapp"></i
+        ></a>
+        <!-- Instagram -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <!-- Linkedin -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center text-dark p-3" style="background-color: rgba(195, 180, 180, 0.2);">
+      © 2023 Copyright:
+      <a class="text-dark">tech.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+  <script src="../js/fonte.js"></script>
+    <!--js link-->
+    <script src="../js/menu.js"></script>
+    <!--fontawesome-->
+<script src="https://kit.fontawesome.com/6c3bbfdabc.js" crossorigin="anonymous"> </script> 
+</body>
+</html>
